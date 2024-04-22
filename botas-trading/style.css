@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./images/ertugrul-gazi.webp');
+    font-family: 'Poppins', sans-serif !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    background-color: #000000;
+}
+
+.overlay-text {
+    z-index: 3;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+
+.app {
+    gap: 90px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app-content {
+    position: relative;
+    z-index: 100;
+    height: 100%;
+}
+
+.card::before {
+    opacity: 1;
+    width: 50%;
+    left: -1px;
+    content: '';
+    z-index: 30;
+    bottom: -1px;
+    display: block;
+    position: absolute;
+    border-bottom-left-radius: 5px;
+    border-top: 3px solid #3935ff;
+}
+
+.card-img {
+    width: 90px !important;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.box:hover img,
+.box:hover svg {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.box:hover .firma-font {
+    color: #c0c0c0 !important;
+}
+
+.firma-font {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.card:hover {
+    background-color: #dddddd !important;
+}
+
+.card:hover .card::before {
+    border: 4px solid #C40009 !important;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    border-top: 1px solid #fff;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+@media screen and (max-width:768px) {
+    .box {
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        position: unset;
+        bottom: 0;
+    }
+
+    .overlay-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .overlay-text {
+        font-size: 14px;
+    }
+}
