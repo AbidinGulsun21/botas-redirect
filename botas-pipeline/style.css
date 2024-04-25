@@ -33,9 +33,14 @@ a {
 .overlay-text {
     z-index: 3;
     color: #fff;
-    font-size: 40px;
+    font-family: sans-serif;
+    font-size: 1rem;
     font-weight: 600;
     position: relative;
+}
+
+.tarih{
+    font-size: 0.8rem;
 }
 
 .app {
@@ -84,7 +89,7 @@ a {
 
 .firma-font {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .card:hover {
@@ -101,11 +106,16 @@ a {
     width: 100%;
     color: #fff;
     padding: 15px;
-    border-top: 1px solid #fff;
 }
 
 .footer p {
     font-size: 12px;
+}
+
+@media screen and (max-width:1030px) {
+    .overlay-text {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:768px) {
